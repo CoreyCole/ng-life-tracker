@@ -1,4 +1,4 @@
-import { TrackingCategory, SchemaType, Operations } from './models';
+import { TrackingCategory, SchemaType, Operations, HistoryLog } from './models';
 
 export const definedCategories: TrackingCategory[] = [
   {
@@ -33,3 +33,23 @@ export const definedCategories: TrackingCategory[] = [
     ]
   }
 ];
+
+export const sampleFoodLog: HistoryLog = {
+  rows: [
+    {
+      name: 'sushi',
+      calories: '200',
+      timestamp: new Date()
+    },
+    {
+      name: 'sushi',
+      calories: '200',
+      timestamp: new Date()
+    },
+    {
+      name: 'sushi',
+      calories: '200',
+      timestamp: new Date()
+    }
+  ]
+};

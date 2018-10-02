@@ -1,5 +1,6 @@
 {
-  "emmet.excludeLanguages": [
-    "typescript"
-  ]
+  "emmet.excludeLanguages": ["typescript"],
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": false
 }

@@ -1,19 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
-import { definedCategories } from '../../categories';
+import { StateService } from '../../state.service';
+import { TrackingCategory } from '../../models';
 
 @Component({
-  selector: 'app-home-page',
+  selector: 'trk-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  categories = definedCategories;
+  categories: Observable<TrackingCategory[]>;
 
-  constructor() { }
+  constructor(private state: StateService) { }
 
   ngOnInit() {
-    console.log(this.categories);
+    this.categories = this.state.scanCategories();
   }
 
 }

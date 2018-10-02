@@ -1,0 +1,14 @@
+<mat-card *ngIf="!!category">
+  <mat-card-header>
+    <mat-card-title>
+      <h1>{{ category.name }}</h1>
+    </mat-card-title>
+    <mat-card-subtitle>Track a new entry</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    Text content
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="accent" (click)="track()">TRACK</button>
+  </mat-card-actions>
+</mat-card>

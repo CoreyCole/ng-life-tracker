@@ -22,3 +22,7 @@ export enum Operations {
   SUM = 'sum',
   DIVIDE = 'divide',
 }
+
+export interface HistoryLog {
+  rows: any[];
+}
