@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <h1>
+    Home page
+  </h1>
+</mat-toolbar>
+<div class="content">
+  <h2>What are you tracking now?</h2>
+  <mat-card *ngFor="let category of categories">
+    <mat-card-header>
+      <mat-card-title>
+        <h1>{{ category.name }}</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-actions align="end">
+      <a [routerLink]="['/track', category.name]">
+        <button mat-raised-button color="accent">SELECT</button>
+      </a>
+    </mat-card-actions>
+  </mat-card>
+</div>
