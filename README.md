@@ -1,6 +1,15 @@
 # NgLifeTracker
+The goal of this project is to make it quick-and-easy to track tasks in your life.
+I was inspired by the user experience of [Strong Lifts](https://stronglifts.com/)
+but I want to make it more flexible to custom workout regimines.
+Also, I wanted to extend it to other areas of life (meals, runs, etc.).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.0-rc.1.
+**NOTE:** The end-use is in control of their data!
+We store everything using the user's Google Drive so their data is secured by google. 
+
+<br/>
+
+# This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.0-rc.1.
 
 ## Development server
 
