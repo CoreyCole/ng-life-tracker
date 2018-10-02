@@ -1,8 +1,8 @@
 <mat-toolbar color="primary">
   <span>What are you tracking?</span>
 </mat-toolbar>
-<div class="content">
-  <mat-card *ngFor="let category of categories">
+<div class="content primaryColorBG">
+  <mat-card *ngFor="let category of categories | async">
     <mat-card-header>
       <mat-card-title>
         <h1>{{ category.name }}</h1>

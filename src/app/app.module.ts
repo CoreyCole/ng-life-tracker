@@ -13,12 +13,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { TrackPageComponent } from './pages/track-page/track-page.component';
+import { HistoryLogComponent } from './components/history-log/history-log.component';
+import { NewEntryComponent } from './components/new-entry/new-entry.component';
+import { StateService } from './state.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    TrackPageComponent
+    TrackPageComponent,
+    HistoryLogComponent,
+    NewEntryComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,9 @@ import { TrackPageComponent } from './pages/track-page/track-page.component';
     MatCardModule,
     MatToolbarModule
   ],
-  providers: [],
+  providers: [
+    StateService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

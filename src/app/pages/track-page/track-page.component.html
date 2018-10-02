@@ -1,3 +1,7 @@
-<mat-toolbar>
-    <span>{{ categoryName }}</span>
-</mat-toolbar>
+<div class="content primaryColorBG">
+  <trk-new-entry [category]="trackingCategory | async"></trk-new-entry>
+  <mat-toolbar color="primary">
+    <span>History</span>
+  </mat-toolbar>
+  <trk-history-log [history]="history | async" [category]="trackingCategory | async"></trk-history-log>
+</div>
